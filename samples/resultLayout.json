@@ -1,0 +1,77 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg",
+                            "size": "Medium",
+                            "horizontalAlignment": "Center",
+                            "altText": "Pokemon logo"
+                        }
+                    ],
+                    "height": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[${name}](https://bulbapedia.bulbagarden.net/wiki/${name}_(Pokemon))",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "**Height:** ${height}",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "**Weight:** ${weight}",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "**Types:** ${typeText}",
+                            "spacing": "Small"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "Medium"
+                },
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "${image}",
+                            "altText": "Result logo",
+                            "size": "Medium",
+                            "horizontalAlignment": "Right"
+                        }
+                    ],
+                    "$when": "${image != ''}"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "$data": {
+        "typeText": "Types",
+        "height": 10,
+        "weight": 70,
+        "image": "https://searchuxcdn.azureedge.net/designerapp/images/stock-image.png",
+        "name": "Pikachu"
+    }
+}

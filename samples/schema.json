@@ -1,0 +1,72 @@
+{
+  "baseType": "microsoft.graph.externalItem",
+  "properties": [
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": true,
+      "labels": [
+        "title"
+      ],
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": false,
+      "name": "order",
+      "type": "double"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": false,
+      "name": "height",
+      "type": "double"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": false,
+      "name": "weight",
+      "type": "double"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": false,
+      "name": "baseExperience",
+      "type": "double"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": false,
+      "name": "image",
+      "type": "String"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": true,
+      "name": "types",
+      "type": "StringCollection"
+    },
+    {
+      "isQueryable": true,
+      "isRefinable": false,
+      "isRetrievable": true,
+      "isSearchable": true,
+      "name": "typeText",
+      "type": "String"
+    }
+  ]
+}
